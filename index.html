@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header  text-center mt-5 pb-2">
+            <h1 class="fw-medium position-relative mb-5">Bookmarker</h1>
+        </div>
+        <div class="test">
+            <h4 class="text-center py-4">
+                <i class="fa-solid fa-bookmark"></i>
+                <span>Bookmark your favorite sites </span>
+                <i class="fa-solid fa-bookmark"></i>
+            </h4>
+            <div class="d-flex flex-column justify-content-center">
+                <label for="exampleFormControlInput1" class="form-label"><i
+                        class="fa-solid fa-book-bookmark fs-6 pe-2 "></i>
+                    <span class="fs-6 fw-bold">site name</span></label>
+                <input oninput="validationForm(this)" type="text" class="form-control  mb-2" id="inputname" placeholder="Bookmark Name">
+                <div class="alert alert-danger d-none"><p>please enter a valid name</p></div>
+                <label for="exampleFormControlInput1" class="form-label"><i
+                        class="fa-solid fa-link fs-6 pe-2 "></i>
+                    <span class="fs-6 fw-bold">Site URL</span></label>
+                <input  oninput="validationForm(this)" type="email" class="mb-2 form-control" id="inputurl" placeholder="Website URL">
+                <div class="alert alert-danger d-none"><p>please enter a valid url</p></div>
+                <div class="test1 pb-4 d-flex justify-content-center"><button  onclick="addproduct()" class=" btn btn-danger mt-5 px-5 ">Submit</button></div>
+            </div>
+            <div class=" row py-2 mt-3 justify-content-center align-items-center bg-white" >
+              <div class="d-flex ">
+                <div class="col-3 text-center">
+                    <p class="mb-2 fw-bold">Index</p>
+                </div>
+                <div class="col-3 text-center" >
+                    <p class="mb-2 fw-bold">Website Name</p>
+                </div>
+                <div class="col-3 text-center" >
+                    <p class="mb-2 fw-bold">Visit</p>
+                </div>
+                <div class="col-3 text-center" >
+                    <p class="mb-2 fw-bold">Delete</p>
+                </div>      
+              </div>
+              <div id="add">
+                
+             
+                
+
+              </div>
+           
+             
+              
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
